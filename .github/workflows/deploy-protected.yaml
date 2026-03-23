@@ -24,6 +24,6 @@ jobs:
     steps:
       - name: deploy
         run: |
-          echo "REF: ${{ input.sha || github.sha }}"
+          echo "REF: ${{ inputs.sha || github.sha }}"
           echo "ENV: ${{ inputs.environment }}"
           echo "HELMFILE_TARGET: ${{ inputs.helmfile_target }}"
